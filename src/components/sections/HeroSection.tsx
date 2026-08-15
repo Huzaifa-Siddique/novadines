@@ -1,5 +1,6 @@
 import React from "react";
 import FadeIn from "../animations/FadeIn";
+import MenuRing from "../animations/MenuRing";
 
 export default function HeroSection() {
   return (
@@ -32,11 +33,8 @@ export default function HeroSection() {
         </div>
       </FadeIn>
       
-      <FadeIn delay={0.4} className="mt-20 relative w-full max-w-3xl aspect-[16/9] mx-auto z-10 rounded-2xl overflow-hidden glass p-2">
-        <div className="w-full h-full bg-black/50 rounded-xl flex items-center justify-center border border-white/5">
-          {/* Placeholder for Wagyu Steak / App Demo Image */}
-          <div className="text-text-muted font-display tracking-widest uppercase">Premium Wagyu Visual Placeholder</div>
-        </div>
+      <FadeIn delay={0.4} className="mt-20 w-full z-10">
+        <MenuRing />
       </FadeIn>
     </section>
   );
