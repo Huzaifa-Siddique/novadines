@@ -5,6 +5,19 @@ import MenuRing from "../animations/MenuRing";
 export default function HeroSection() {
   return (
     <section className="relative pt-40 pb-20 px-6 overflow-hidden flex flex-col items-center text-center min-h-[90vh] justify-center">
+      {/* 3D Grid Floor mimicking the cyberpunk concept art */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-[60vh] -z-20 pointer-events-none" 
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+          transform: 'perspective(1000px) rotateX(70deg) scale(2.5) translateY(100px)',
+          transformOrigin: 'bottom',
+          maskImage: 'linear-gradient(to top, black 20%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to top, black 20%, transparent 100%)'
+        }}
+      />
+      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-primary/5 rounded-full blur-[120px] pointer-events-none -z-10" />
       
       <FadeIn delay={0.1} className="max-w-4xl mx-auto z-10">
