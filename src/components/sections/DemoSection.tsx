@@ -17,20 +17,24 @@ export default function DemoSection() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <FadeIn delay={0.2} className="relative w-full max-w-[320px] aspect-[9/19] glass rounded-[3rem] p-3 shadow-2xl flex-shrink-0">
             <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-black relative border border-white/10">
-              {/* iframe placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center text-text-muted">
-                Demo iframe loading...
-              </div>
+              <iframe 
+                src="https://oasislounge.vercel.app/" 
+                className="w-full h-full border-0 absolute inset-0 z-10"
+                title="Oasis Lounge Demo"
+                loading="lazy"
+              />
             </div>
             {/* iPhone Notch */}
             <div className="absolute top-3 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-xl z-20" />
           </FadeIn>
 
           <FadeIn delay={0.4} className="flex flex-col items-center text-center max-w-sm">
-            <div className="w-48 h-48 glass rounded-2xl p-4 mb-6 flex items-center justify-center">
-              <div className="w-full h-full border-2 border-dashed border-gold-primary/30 rounded-xl flex items-center justify-center text-gold-light text-sm">
-                QR Placeholder
-              </div>
+            <div className="w-48 h-48 bg-white rounded-2xl p-3 mb-6 shadow-2xl border border-white/10">
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://oasislounge.vercel.app/&margin=0" 
+                alt="QR Code to Oasis Lounge Demo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <h3 className="text-2xl font-display font-bold text-text-primary mb-2">Scan to Test</h3>
             <p className="text-text-muted text-sm mb-8">
