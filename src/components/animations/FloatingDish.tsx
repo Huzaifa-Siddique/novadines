@@ -24,7 +24,7 @@ export default function FloatingDish() {
         {/* Main Dish Image */}
         <div className="w-full h-full rounded-full overflow-hidden border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.8)] relative bg-[#111]">
           <img 
-            src="https://images.unsplash.com/photo-1544025162-8366fd06ac9a?q=80&w=800&h=800&fit=crop" 
+            src="/images/premium_ribs.jpg" 
             alt="Premium Ribs" 
             className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
           />
