@@ -4,16 +4,26 @@ import FadeIn from "../animations/FadeIn";
 export default function ServicesSection() {
   const tiers = [
     {
-      name: "The Foundation",
-      description: "A premium, read-only interactive digital menu.",
+      name: "Foundation Tier",
+      description: "A premium, interactive digital menu.",
       price: "Custom",
-      features: ["Custom UI Design", "Cloud Hosting", "QR Code Generation", "Basic Analytics"]
+      features: [
+        "Custom Brand Matched UI", 
+        "High Resolution Photographic Layout", 
+        "Arabic/English One Tap Toggle", 
+        "Managed Cloud Hosting & Custom Domain"
+      ]
     },
     {
-      name: "The Conversion Engine",
+      name: "Conversion Engine",
       description: "Full WhatsApp ordering system integrated.",
       price: "Most Popular",
-      features: ["Everything in Foundation", "WhatsApp Cart Integration", "Order Management", "Priority Support"],
+      features: [
+        "Everything in Foundation", 
+        "WhatsApp Cart Direct Ordering", 
+        "Dine In (Table No.) & Takeaway Modes", 
+        "Zero App Downloads Required"
+      ],
       highlight: true
     },
     {
