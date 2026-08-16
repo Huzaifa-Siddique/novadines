@@ -16,7 +16,7 @@ export default function DemoSection() {
         </FadeIn>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-          <FadeIn delay={0.2} className="relative w-full max-w-[320px] aspect-[9/19] glass rounded-[3rem] p-3 shadow-2xl flex-shrink-0">
+          <FadeIn delay={0.2} className="relative w-full max-w-[320px] h-[80vh] min-h-[650px] max-h-[850px] glass rounded-[3rem] p-3 shadow-2xl flex-shrink-0">
             <div 
               className="w-full h-full rounded-[2.5rem] bg-black relative border border-white/10"
               style={{
