@@ -16,7 +16,14 @@ export default function DemoSection() {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <FadeIn delay={0.2} className="relative w-full max-w-[320px] aspect-[9/19] glass rounded-[3rem] p-3 shadow-2xl flex-shrink-0">
-            <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-black relative border border-white/10">
+            <div 
+              className="w-full h-full rounded-[2.5rem] overflow-hidden bg-black relative border border-white/10"
+              style={{
+                // Forces iOS Safari to actually respect overflow-hidden and border-radius on the iframe
+                WebkitMaskImage: '-webkit-radial-gradient(white, black)',
+                transform: 'translateZ(0)'
+              }}
+            >
               <iframe 
                 src="https://oasislounge.vercel.app/" 
                 className="w-full h-full border-0 absolute inset-0 z-10"
