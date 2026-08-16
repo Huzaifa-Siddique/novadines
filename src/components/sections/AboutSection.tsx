@@ -4,18 +4,18 @@ import FadeIn from "../animations/FadeIn";
 const team = [
   {
     name: "Huzaifa Siddiqui",
-    role: "Technical Director",
-    description: "Specializing in high-performance UI/UX, Huzaifa leads the development of Novadines's lightning-fast menu engines.",
+    role: "Founder",
+    description: "Specializing in high-performance UI/UX, Huzaifa leads the development of Oasis Lounge's lightning-fast menu engines.",
     image: "/images/team/huzaifa.webp",
     objectPosition: "object-center"
   },
   {
     name: "Owais Siddiqui",
-    role: "Head of Infrastructure",
+    role: "Co-Founder",
     description: "Owais manages cloud operations and technical deployments, ensuring 99.9% uptime for our hospitality clients.",
     image: "/images/team/owais.webp",
-    // Adjusting alignment specifically for Owais's picture based on previous feedback
-    objectPosition: "object-top pt-2"
+    // Adjusting object-position to shift his face down slightly so the top of his head isn't cut off
+    objectPosition: "object-[center_20%]"
   }
 ];
 
@@ -40,7 +40,7 @@ export default function AboutSection() {
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className={`w-full h-full object-cover ${member.objectPosition || 'object-center'} grayscale hover:grayscale-0 transition-all duration-500`} 
+                  className={`w-full h-full object-cover ${member.objectPosition || 'object-center'} transition-transform duration-700 hover:scale-110`} 
                 />
               </div>
               <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-gold-primary/20 bg-gold-primary/10 text-[10px] font-bold tracking-widest uppercase text-gold-light mb-4">

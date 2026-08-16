@@ -1,5 +1,6 @@
 import React from "react";
 import FadeIn from "../animations/FadeIn";
+import { ExternalLink } from "lucide-react";
 
 export default function DemoSection() {
   return (
@@ -35,7 +36,7 @@ export default function DemoSection() {
             <div className="absolute top-3 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-xl z-20" />
           </FadeIn>
 
-          <FadeIn delay={0.4} className="flex flex-col items-center text-center max-w-sm">
+          <FadeIn delay={0.4} className="flex flex-col items-center text-center max-w-sm w-full">
             <div className="w-48 h-48 bg-white rounded-2xl p-3 mb-6 shadow-2xl border border-white/10">
               <img 
                 src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://oasislounge.vercel.app/&margin=0" 
@@ -47,14 +48,25 @@ export default function DemoSection() {
             <p className="text-text-muted text-sm mb-8">
               Open your camera and scan the code to instantly experience the seamless mobile UI. No downloads required.
             </p>
-            <a
-              href="https://wa.me/923363118022?text=Hi%20Novadines,%20I%20just%20tried%20the%20live%20demo.%20I%20want%20this%20for%20my%20venue."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full border border-gold-primary/20 bg-gold-primary hover:bg-gold-light hover:-translate-y-0.5 active:scale-95 transition-all text-black text-xs font-bold tracking-widest uppercase shadow-lg shadow-gold-primary/20 w-full"
-            >
-              Get This For My Restaurant
-            </a>
+            <div className="flex flex-col w-full gap-3">
+              <a
+                href="https://oasislounge.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-full border border-white/10 glass hover:bg-white/5 hover:-translate-y-0.5 active:scale-95 transition-all text-text-primary text-xs font-bold tracking-widest uppercase shadow-lg w-full flex items-center justify-center gap-2"
+              >
+                Open Full Demo
+                <ExternalLink className="w-4 h-4" />
+              </a>
+              <a
+                href="https://wa.me/923363118022?text=Hi%20Novadines,%20I%20just%20tried%20the%20live%20demo.%20I%20want%20this%20for%20my%20venue."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-full border border-gold-primary/20 bg-gold-primary hover:bg-gold-light hover:-translate-y-0.5 active:scale-95 transition-all text-black text-xs font-bold tracking-widest uppercase shadow-lg shadow-gold-primary/20 w-full"
+              >
+                Get This For My Restaurant
+              </a>
+            </div>
           </FadeIn>
         </div>
       </div>
