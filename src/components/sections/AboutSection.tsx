@@ -4,14 +4,14 @@ import FadeIn from "../animations/FadeIn";
 const team = [
   {
     name: "Huzaifa Siddiqui",
-    role: "Founder",
+    role: "Founder & Technical Director",
     description: "Specializing in high-performance UI/UX, Huzaifa leads the development of Oasis Lounge's lightning-fast menu engines.",
     image: "/images/team/huzaifa.webp",
     objectPosition: "object-center"
   },
   {
     name: "Owais Siddiqui",
-    role: "Co-Founder",
+    role: "Co-Founder & Head of Infrastructure",
     description: "Owais manages cloud operations and technical deployments, ensuring 99.9% uptime for our hospitality clients.",
     image: "/images/team/owais.webp",
     // Adjusting object-position to shift his face down slightly so the top of his head isn't cut off
