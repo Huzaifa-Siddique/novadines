@@ -10,11 +10,11 @@ export default function HeroSection() {
       
       <FadeIn delay={0.1} className="max-w-4xl mx-auto z-10">
         <h1 className="text-5xl md:text-7xl font-display font-extrabold text-text-primary tracking-tight leading-tight mb-6">
-          Turn Your Digital Menu Into a <br className="hidden md:block" />
-          <span className="text-gradient-gold">Revenue Engine</span>
+          Bypass 30% Delivery App <br className="hidden md:block" />
+          <span className="text-gradient-gold">Commissions.</span>
         </h1>
         <p className="text-lg md:text-xl text-text-muted max-w-2xl mx-auto mb-10 font-light">
-          No app downloads. No 30% commissions. Just a high-end, lightning-fast digital experience that drives orders directly to your WhatsApp.
+          A lightning-fast direct ordering system for Pickup and Local Delivery. Zero commissions. Orders land straight on your WhatsApp.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

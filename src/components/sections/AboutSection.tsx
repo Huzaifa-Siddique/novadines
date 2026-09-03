@@ -5,7 +5,7 @@ const team = [
   {
     name: "Huzaifa Siddiqui",
     role: "Founder & Technical Director",
-    description: "Specializing in high-performance UI/UX, Huzaifa leads the development of our clients' lightning-fast menu engines.",
+    description: "Specializing in high-performance UI/UX, Huzaifa leads the development of our clients' lightning-fast direct ordering systems.",
     image: "/images/team/huzaifa.webp",
     imageClassName: "object-center scale-100 group-hover:scale-110"
   },

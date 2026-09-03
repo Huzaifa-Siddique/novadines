@@ -9,7 +9,7 @@ export default function Footer() {
             Novadines
           </span>
           <p className="text-text-muted text-sm max-w-sm">
-            High-end digital menus that convert. Zero friction, zero commissions.
+            High-performance direct ordering systems that recover your 30% margins.
           </p>
         </div>
         <div className="flex flex-col items-center md:items-end gap-4">
