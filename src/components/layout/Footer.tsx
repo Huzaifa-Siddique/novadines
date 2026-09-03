@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="py-12 border-t border-glass-border mt-32 relative z-[1]">
+    <footer className="py-12 border-t border-glass-border relative z-[1]">
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col gap-2 text-center md:text-left">
           <span className="font-display font-bold text-xl tracking-widest text-text-primary uppercase">
